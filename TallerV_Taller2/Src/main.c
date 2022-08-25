@@ -72,6 +72,12 @@ int main(void)
 
 	setVar |= (1<<6);
 
+	char ejercicioVar = 0b10111010;
+
+	ejercicioVar &= ~(0b1111<<4);
+	ejercicioVar |= (0xD<<4);
+
+
     /* Loop forever */
 	while(1){
 
